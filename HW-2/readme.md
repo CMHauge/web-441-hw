@@ -19,8 +19,7 @@ Code I already put in out of habit:
     <!-- Title -->
     <title>MART441 Homework 2 - Javascript</title>
     <!-- Light Styling -->
-    <style>body{background-color: #b8f0f6;}</style>
-    ```
+    <style>body{background-color: #b8f0f6;}</style>```
 
 ### Natural Curiosity:
 I have a little bit of experience with Javascript, although it's very minimal experience. I tend to have a sort of natural curiosity when it comes to technology, so I've messed around with Javascript in the past purely for curiosity's sake. Although that code had more to do with gaming, it was interesting (and frustrating) to learn.
