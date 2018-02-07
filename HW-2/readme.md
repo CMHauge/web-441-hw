@@ -20,6 +20,7 @@ Code I already put in out of habit:
     <title>MART441 Homework 2 - Javascript</title>
     <!-- Light Styling -->
     <style>body{background-color: #b8f0f6;}</style>
+    </head>
     ```
 ---
 
