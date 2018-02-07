@@ -16,10 +16,6 @@ Code I already put in out of habit:
     <meta name="description" content="MART441 HW2">
     <meta name="author" content="Chelsey Hauge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>MART441 Homework 2 - Javascript</title>
-    <!-- Light Styling -->
-    <style>body{background-color: #b8f0f6;}</style>
     </head>
     ```
 ---
