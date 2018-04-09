@@ -54,4 +54,4 @@ function grabText() {
   storage.appendChild(newP);
 }
 
-document.querySelector("#runButton").addEventListener("click", grabText );
+document.querySelector("#runButton").addEventListener('click', grabText );
