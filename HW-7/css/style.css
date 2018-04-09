@@ -1,0 +1,111 @@
+/* Body Styling Basic */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling Main Story Container */
+.firstContainer{
+font-size: 20px;
+font-family: 'Quicksand';
+text-align: center;
+border: 4px solid #fbd477;
+border-radius: 8px;
+margin: 40px;
+padding: 3em;
+}
+
+/* Styling the Form */
+.form1 {
+margin: 40px;
+margin-top: 40px;
+margin-bottom: 5px;
+text-align: center;
+}
+
+/* Styling Headers */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin: 40px;
+  font-family: 'Arvo';
+  font-weight: bold;
+}
+
+/*Styling Option 1 Page */
+.pineappleContainer1 {
+  font-size: 20px;
+  font-family: 'Quicksand';
+  text-align: center;
+  border: 4px solid #000000;
+  border-radius: 8px;
+  margin: 40px;
+  padding: 3em;
+  color: #000000;
+}
+
+/*Styling Option 2 Page */
+.noPineappleContainer1 {
+  font-size: 20px;
+  font-family: 'Quicksand';
+  text-align: center;
+  border: 4px solid #711d11;
+  border-radius: 8px;
+  margin: 40px;
+  padding: 3em;
+  color: #000000;
+}
+
+/* Styling Pineapple Pizza Button */
+#PA1{
+  font-size: 18px;
+  background-color: #ffebbc;
+  border: 3px solid #fbd477;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/*Center aligning Pineapple Pizza Button */
+.Pineapple1 {
+  text-align: center;
+}
+
+/*Styling Non-Pineapple Pizza Button */
+#noPA1 {
+  font-size: 18px;
+  background-color: #ffebbc;
+  border: 3px solid #fbd477;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*Center aligning Non-Pineapple Pizza Button */
+.noPineapple1 {
+  text-align: center;
+}
+
+/*Styling Run/Input Button*/
+#runButton{
+  font-size: 18px;
+  background-color: #ffebbc;
+  border: 3px solid #fbd477;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/*Styling Text Input Box*/
+#textIn1{
+  font-size: 18px;
+  border: 3px solid #000000;
+  border-radius: 8px;
+}
+
+/*Styling Storage Text Area*/
+#storageDiv{
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  font-family: 'Arvo';
+  margin-top: 40px;
+}

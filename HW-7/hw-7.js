@@ -66,6 +66,15 @@ function showHideTextPA(){
     bt2.hidden=true;
     bt1.hidden=true;
     el.hidden=true;
+    body.style.background="#c4f17c";
+
+/*Setting an alert function that thanks the reader for participating*/
+/*Alert waits 3 seconds before triggering*/
+    function congratsAlert(){
+      alert("Thanks for reading!");
+    }
+    setTimeout(congratsAlert, 3000);
+
   } else {
     paCont1.hidden=true;
     formEl.hidden=false;
@@ -89,6 +98,14 @@ function showHideTextNoPA() {
   bt1.hidden=true;
   bt2.hidden=true;
   el.hidden=true;
+  body.style.background="#ffebbc";
+
+  /*Setting an alert function that thanks the reader for participating, again*/
+  /*Alert waits 3 seconds before triggering*/
+  function congratsAlert(){
+    alert("Thanks for reading!");
+  }
+  setTimeout(congratsAlert, 3000);
 
 } else {
   npCont1.hidden=true;
@@ -101,6 +118,8 @@ function showHideTextNoPA() {
   el.hidden=false;
 }
 }
+
+/* Committing all children elements to project */
 el.appendChild(elChild);
 el.appendChild(elChild2);
 el.appendChild(elChild3);
