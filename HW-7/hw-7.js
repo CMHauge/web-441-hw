@@ -40,13 +40,13 @@ btPA3.addEventListener("click", showHideTextPA3);
 btNP2.addEventListener("click", showHideTextNoPA2);
 btNP3.addEventListener("click", showHideTextNoPA3);
 
+/*I don't know why this isn't working...*/
 function grabText() {
   let textIn;
   textIn = document.querySelector("#textIn1").value;
+  if( textIn.length < 1){ alert("Write your name!"); return }
 
-  if ( textIn.length < 1){ alert("Enter your name!"); return }
-
-  let textToAdd = document.createTextNode("Hey there "+textIn+", glad you're here!");
+  let textToAdd = document.createTextNode(textIn);
   let newP = document.createElement("P");
   newP.appendChild(textToAdd);
 
@@ -55,10 +55,10 @@ function grabText() {
 }
 
 document.querySelector(".form1").addEventListener('keypress', (event) => {
-  if (event.keyCodee == 13) {
+  if (event.keyCode == 13) {
     event.preventDefault();
     grabText();
   }
 });
 
-document.querySelector("#runButton").addEventListener('click', grabText );
+document.querySelector("#runButton").addEventListener('click', grabText);
