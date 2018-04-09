@@ -1,4 +1,4 @@
-/* Defining different variables, I may have gone overboard but everything is there I think. */
+/* Defining different variables */
 let body = document.body;
 
 /* Defining usual div, header and paragraph variables */
@@ -12,53 +12,96 @@ let cont1 = document.querySelector(".firstContainer");
 
 /* Defining the Pineapple options containers as variables */
 let paCont1 = document.querySelector(".pineappleContainer1");
-let paCont2 = document.querySelector(".pineappleContainer2");
-let paCont3 = document.querySelector(".pineappleContainer3");
 
 /* Defining the Non-Pineapple options containers as variables */
 let npCont1 = document.querySelector(".noPineappleContainer1");
-let npCont2 = document.querySelector(".noPineappleContainer2");
-let npCont3 = document.querySelector(".noPineappleContainer3");
 
 /* Defining the first set of button variables on main page */
 let bt1 = document.querySelector("#PA1");
 let bt2 = document.querySelector("#noPA1");
 
-/* Defining the Pineapple button variables */
-let btPA2 = document.querySelector("#PA2");
-let btPA3 = document.querySelector("#PA3");
-
-/* Defining the Non-Pineapple button variables */
-let btNP2 = document.querySelector("#noPA2");
-let btNP3 = document.querySelector("#noPA3");
+/* Defining the form and storage elements */
+let formEl = document.querySelector(".form1");
+let storEl = document.querySelector(".storageDiv");
 
 /* Adding event listeners to buttons to unhide text after option selection */
 bt1.addEventListener("click", showHideTextPA);
 bt2.addEventListener("click", showHideTextNoPA);
-btPA2.addEventListener("click", showHideTextPA2);
-btPA3.addEventListener("click", showHideTextPA3);
-btNP2.addEventListener("click", showHideTextNoPA2);
-btNP3.addEventListener("click", showHideTextNoPA3);
 
-/*I don't know why this isn't working...*/
+/* Create a function that allows text input into a form */
 function grabText() {
   let textIn;
   textIn = document.querySelector("#textIn1").value;
   if( textIn.length < 1){ alert("Write your name!"); return }
 
+/* Add text when user inputs their name, welcoming them to the story */
   let textToAdd = document.createTextNode("Hello "+textIn+"!");
   let newP = document.createElement("P");
   newP.appendChild(textToAdd);
 
+/* Telling the script where to store this new information */
   let storage = document.querySelector("#storageDiv");
   storage.appendChild(newP);
 }
-
+/* Prevent the browser from performing the default function upon pressing a key, and possibly refreshing the page, rather than submitting their name */
 document.querySelector(".form1").addEventListener('keypress', (event) => {
   if (event.keyCode == 13) {
     event.preventDefault();
     grabText();
   }
 });
-
+/* Grab the text when a user inputs it */
 document.querySelector("#runButton").addEventListener('click', grabText);
+
+/* Adding button functionality to hide and unhide text once a decision is made by user */
+/* This allows us to hide everything initially until our buttons are pressed, and then switch over to the proper cooresponding story section */
+/*Pineapple Pizza Option */
+function showHideTextPA(){
+  if (paCont1.hidden) {
+    paCont1.hidden=false;
+    formEl.hidden=true;
+    storEl.hidden=true;
+    cont1.hidden=true;
+    npCont1.hidden=true;
+    bt2.hidden=true;
+    bt1.hidden=true;
+    el.hidden=true;
+  } else {
+    paCont1.hidden=true;
+    formEl.hidden=false;
+    storEl.hidden=false;
+    cont1.hidden=false;
+    npCont.hidden=false;
+    bt2.hidden=false;
+    bt1.hidden=false;
+    el.hidden=false;
+  }
+}
+
+/* Same thing as before, but this time for the second option/non-pineapple option */
+function showHideTextNoPA() {
+  if (npCont1.hidden) {
+  npCont1.hidden=false;
+  formEl.hidden=true;
+  storEl.hidden=true;
+  cont1.hidden=true;
+  paCont1.hidden=true;
+  bt1.hidden=true;
+  bt2.hidden=true;
+  el.hidden=true;
+
+} else {
+  npCont1.hidden=true;
+  formEl.hidden=false;
+  storEl.hidden=false;
+  cont1.hidden=false;
+  paCont1.hidden=false;
+  bt1.hidden=false;
+  bt2.hidden=false;
+  el.hidden=false;
+}
+}
+el.appendChild(elChild);
+el.appendChild(elChild2);
+el.appendChild(elChild3);
+body.appendChild(el);

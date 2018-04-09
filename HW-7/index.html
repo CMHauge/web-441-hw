@@ -19,7 +19,8 @@
     <!--Adding a Form Text Input for Name -->
 <form class="form1" action="#" method="post">
   <input type="text" name="TextInput" placeholder="What is your name?" id="textIn1">
-  <button type="button" name="button" id="runButton">Submit</button>
+    <!--Add a button and disable it after being clicked to prevent multiple clicks, thus filling the text area-->
+  <button type="button" name="button" id="runButton" onclick="this.disabled=true;">Submit</button>
 </form>
 
     <!--Adding a place to store said name-->
@@ -44,60 +45,16 @@ Which do you choose?</p>
     <!--Creating another container, coorosponding to our first option-->
 <div class="pineappleContainer1" hidden="true">
   <h1>Pineapple Pizza</h1>
-<p>Being a self-proclaimed pineapple lover, you decide to try one of every pineapple option, but as you look around to find a seat, you notice that a large section of the restaurant seems to be sectioned off as it was reserved for a party, to which you assume would be the group that the man at the register spoke of earlier. Do you:</p>
+<p>Being a self-proclaimed pineapple lover, you decide to try one of every pineapple option, but as you look around to find a seat, you notice that a large section of the restaurant seems to be sectioned off as it was reserved for a party. You note that they are clearly the group of people who had requested pineapple pizza options and you decide to wander over and see if you can sit with them. Upon realizing that you too enjoy pineapple on your pizza, they recognize you as one of their own and invite you to sit with them.</p>
 </div>
 
-    <!--Creating two more buttons for more options-->
-    <!--Pineapple Option  A-->
-<div class="Pineapple2"  hidden="true">
-  <button type="button" name="Pineapple2" id="PA2">Try to ask the group if you can join them, as they too are pineapple lovers.</button>
-</div>
-
-    <!--Pineapple Option B-->
-<div class="Pineapple3" hidden="true">
-  <button type="button" name="Pineapple3" id="PA3">Take your chances with the other crowded area of the restaurant.</button>
-</div>
-
-    <!--Creating the result for PA Option A-->
-<div class="pineappleContainer2" hidden="true">
-  <h3>You ask the group if you can join them.</h3>
-  <p>Seeing a group of like-minded people all sitting together and noting that they are clearly the group of people who had requested pineapple pizza options, you decide to wander over and see if you can sit with them. Upon realizing that you too enjoy pineapple on your pizza, they recognize you as one of their own and invite you to sit with them.</p>
-</div>
-
-    <!--Creating the reseult for PA Option B-->
-<div class="pineappleContainer3" hidden="true">
-  <h3>You take your chances with thee crowded restaurant</h3>
-  <p>You decide to take your chances with the crowded public area of the restaurant, only to discover that the majority of people around you are non-pineapple people, and thus they stare at you in horror of your pineapple-pizza eating self. But hey, who cares what they think, you have delicious pizza!</p>
-</div>
 
     <!--Creating the Non-Pineapple Story Result to set up for more options-->
 <div class="noPineappleContainer1" hidden="true">
   <h1>Non-Pineapple Pizza</h1>
-    <p>Glaring at the pineapple pizza, you make your way to the non-pineapple options and pick and choose from a variety of pizzas. As you look around to find your seat, you realize that there are only a few places to sit. You can:</p>
+    <p>Glaring at the pineapple pizza, you make your way to the non-pineapple options and pick and choose from a variety of pizzas. As you look around to find your seat, you realize that there are only a few places to sit. You decide to take your chances with the crowded area. It might be quiet, but at least there's not as much pineapple for you to smell on this side. You don't have to smell pineapple, and you get delicious pizza! It's a win-win!</p>
   </div>
 
-    <!--More Button Choices-->
-    <!--Non-Pineapple Option A-->
-<div class="noPineapple2" hidden="true">
-  <button type="button" name="noPineapple2" id="noPA2">Find a place in the crowded area.  There are seats available, but it's a little loud.</button>
-</div>
-
-    <!--None-Pineapple Option B-->
-<div class="noPineapple3" hidden="true">
-  <button type="button" name="noPineapple3" id="noPA3">Make your way to the other end of the restaurant and find a quiet seat there.</button>
-</div>
-
-    <!--Result for noPA Option A-->
-<div class="noPineappleContainer2" hidden="true">
-  <h3>Find a place in the crowded area. There are seats available, but it's a little loud.</h3>
-  <p>You decide to take your chances with the crowded area. It might be quiet, but at least there's not as much pineapple for you to smell on this side. You don't have to smell pineapple, and you get delicious pizza! It's a win-win!</p>
-</div>
-
-    <!--Result for noPA Option B-->
-<div class="noPineappleContainer3" hidden="true">
-  <h3>Make your way to the other end of the restaurant and find a quiet seat there.</h3>
-  <p>Liking the idea of peace and quiet much better than the loud, crowded area of the restaurant, you decide to take your chances with going to the other side. However, what you didn't realize initially is that you'd have to walk past the whole group of pineapple lovers with their pineapple pizza. You awkwardly make your way to an empty seat just past their group, the whole lot of them staring at you in confusion as to why you passed on pineapple pizza.</p>
-</div>
 
     <!--Linking the Javascript file to HTML-->
     <script src="./hw-7.js"></script>
