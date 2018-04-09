@@ -54,4 +54,11 @@ function grabText() {
   storage.appendChild(newP);
 }
 
+document.querySelector(".form1").addEventListener('keypress', (event) => {
+  if (event.keyCodee == 13) {
+    event.preventDefault();
+    grabText();
+  }
+});
+
 document.querySelector("#runButton").addEventListener('click', grabText );
