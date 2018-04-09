@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="MART441 HW7">
+    <meta name="author" content="Chelsey Hauge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="HW-7/style.css">
+
+    <!-- Title -->
+    <title>Choose Your Own Story: Pineapple on Pizza?</title>
+
+    <!-- Background-Color -->
+    <style>body{background-color: #f9fae8;}</style>
+  </head>
+  <body>
+
+    <!--Adding a Form Text Input for Name -->
+<form class="form1" action="#" method="post">
+  <input type="text" name="TextInput" placeholder="What is your name?" id="textIn1">
+  <button type="button" name="button" id="runButton">Submit</button>
+</form>
+
+    <!--Adding a place to store said name-->
+<div class="storageDiv" id="storageDiv" style="min-height:100px;"></div>
+
+    <!--Story Beginning Container, defined with a class-->
+<div class="firstContainer">
+  <h1>Pineapple on Pizza?</h1>
+<p>You enter a local pizza buffet, prepared to sit down and eat your usual favorites. But tonight, you're not so lucky. As you just finish paying for your dinner before being set loose upon the pizza buffet, the man at the register informs you that tonight is a special event night. He explains, "As a request from a local group, we've supplied a whole buffet of pineapple options. Don't worry, we still have some of our regular options too."
+You wander over to the buffet, scanning all the options. Half the table has 6 options for pineapple, and half the table has 6 options for non-pineapple.
+Which do you choose?</p>
+</div>
+
+    <!--Creating buttons for our options, defined by classes and ids-->
+<div class="Pineapple1">
+  <button type="button" name="Pineapple1" id="PA1">Pineapple Pizza</button>
+</div>
+<div class="noPineapple1">
+  <button type="button" name="noPineapple1" id="noPA1">Non-Pineapple Pizza</button>
+</div>
+
+    <!--Creating another container, coorosponding to our first option-->
+<div class="pineappleContainer1" hidden="true">
+  <h1>Pineapple Pizza</h1>
+<p>Being a self-proclaimed pineapple lover, you decide to try one of every pineapple option, but as you look around to find a seat, you notice that a large section of the restaurant seems to be sectioned off as it was reserved for a party, to which you assume would be the group that the man at the register spoke of earlier. Do you:</p>
+</div>
+
+    <!--Creating two more buttons for more options-->
+    <!--Pineapple Option  A-->
+<div class="Pineapple2"  hidden="true">
+  <button type="button" name="Pineapple2" id="PA2">Try to ask the group if you can join them, as they too are pineapple lovers.</button>
+</div>
+
+    <!--Pineapple Option B-->
+<div class="Pineapple3" hidden="true">
+  <button type="button" name="Pineapple3" id="PA3">Take your chances with the other crowded area of the restaurant.</button>
+</div>
+
+    <!--Creating the result for PA Option A-->
+<div class="pineappleContainer2" hidden="true">
+  <h3>You ask the group if you can join them.</h3>
+  <p>Seeing a group of like-minded people all sitting together and noting that they are clearly the group of people who had requested pineapple pizza options, you decide to wander over and see if you can sit with them. Upon realizing that you too enjoy pineapple on your pizza, they recognize you as one of their own and invite you to sit with them.</p>
+</div>
+
+    <!--Creating the reseult for PA Option B-->
+<div class="pineappleContainer3" hidden="true">
+  <h3>You take your chances with thee crowded restaurant</h3>
+  <p>You decide to take your chances with the crowded public area of the restaurant, only to discover that the majority of people around you are non-pineapple people, and thus they stare at you in horror of your pineapple-pizza eating self. But hey, who cares what they think, you have delicious pizza!</p>
+</div>
+
+    <!--Creating the Non-Pineapple Story Result to set up for more options-->
+<div class="noPineappleContainer1" hidden="true">
+  <h1>Non-Pineapple Pizza</h1>
+    <p>Glaring at the pineapple pizza, you make your way to the non-pineapple options and pick and choose from a variety of pizzas. As you look around to find your seat, you realize that there are only a few places to sit. You can:</p>
+  </div>
+
+    <!--More Button Choices-->
+    <!--Non-Pineapple Option A-->
+<div class="noPineapple2" hidden="true">
+  <button type="button" name="noPineapple2" id="noPA2">Find a place in the crowded area.  There are seats available, but it's a little loud.</button>
+</div>
+
+    <!--None-Pineapple Option B-->
+<div class="noPineapple3" hidden="true">
+  <button type="button" name="noPineapple3" id="noPA3">Make your way to the other end of the restaurant and find a quiet seat there.</button>
+</div>
+
+    <!--Result for noPA Option A-->
+<div class="noPineappleContainer2" hidden="true">
+  <h3>Find a place in the crowded area. There are seats available, but it's a little loud.</h3>
+  <p>You decide to take your chances with the crowded area. It might be quiet, but at least there's not as much pineapple for you to smell on this side. You don't have to smell pineapple, and you get delicious pizza! It's a win-win!</p>
+</div>
+
+    <!--Result for noPA Option B-->
+<div class="noPineappleContainer3" hidden="true">
+  <h3>Make your way to the other end of the restaurant and find a quiet seat there.</h3>
+  <p>Liking the idea of peace and quiet much better than the loud, crowded area of the restaurant, you decide to take your chances with going to the other side. However, what you didn't realize initially is that you'd have to walk past the whole group of pineapple lovers with their pineapple pizza. You awkwardly make your way to an empty seat just past their group, the whole lot of them staring at you in confusion as to why you passed on pineapple pizza.</p>
+</div>
+
+    <!--Linking the Javascript file to HTML-->
+    <script src="./hw-7.js"></script>
+    </body>
+    </html>
