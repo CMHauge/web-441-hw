@@ -46,7 +46,7 @@ function grabText() {
   textIn = document.querySelector("#textIn1").value;
   if( textIn.length < 1){ alert("Write your name!"); return }
 
-  let textToAdd = document.createTextNode(textIn);
+  let textToAdd = document.createTextNode("Hello "+textIn+"!");
   let newP = document.createElement("P");
   newP.appendChild(textToAdd);
 
