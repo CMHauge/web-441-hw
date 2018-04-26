@@ -1,3 +1,4 @@
+/*Adding variables for controls, vide player, and timer parts*/
 var media = document.querySelector('video');
 var controls = document.querySelector('.controls');
 
@@ -10,10 +11,11 @@ var timerWrapper = document.querySelector('.timer');
 var timer = document.querySelector('.timer span');
 var timerBar = document.querySelector('.timer div');
 
-
+/*Telling the browser to hide default controls to implement custom controls*/
 media.removeAttribute('controls');
 controls.style.visibility = 'visible';
 
+/*Adding all appropriate event listeners to be used later for functions, like stopping, pausing, playing, rewinding and skipping forward in the video*/
 play.addEventListener('click', playPauseMedia);
 stop.addEventListener('click', stopMedia);
 media.addEventListener('ended', stopMedia);
@@ -21,6 +23,7 @@ rwd.addEventListener('click', mediaBackward);
 fwd.addEventListener('click', mediaForward);
 media.addEventListener('timeupdate', setTime);
 
+/*Checking to see if the video is paused or not, if it is, display the play icon, if it's playing, display the pause icon*/
 function playPauseMedia() {
 rwd.classList.remove('active');
 fwd.classList.remove('active');
@@ -35,6 +38,7 @@ clearInterval(intervalFwd);
   }
 }
 
+/*End the video when we tell it to, or stop when it has ended naturally*/
 function stopMedia() {
   media.pause();
   media.currentTime = 0;
@@ -44,10 +48,11 @@ function stopMedia() {
   clearInterval(intervalRwd);
   clearInterval(intervalFwd);
 }
-
+/*Introducing forward and backwards variables*/
 var intervalFwd;
 var intervalRwd;
-
+/*Cancels the forward button so that the player doesn't break while pushing the rewind button*/
+/*Then we check to see if the button has been pressed, if yes, we remove its active status and clear the button to avoid breaking, and play the video as normal*/
 function mediaBackward() {
   clearInterval(intervalFwd);
   fwd.classList.remove('active');
@@ -62,7 +67,7 @@ function mediaBackward() {
     intervalRwd = setInterval(windBackward, 200);
   }
 }
-
+/*Does the same thing as the mediaBackward function, only the opposite*/
 function mediaForward() {
   clearInterval(intervalRwd);
   rwd.classList.remove('active');
@@ -77,7 +82,7 @@ function mediaForward() {
     intervalFwd = setInterval(windForward, 200);
   }
 }
-
+/*Checks to see if the video's current time is under 3 seconds, this is so we can remove the rewind functionality to avoid breaking the player*/
 function windBackward() {
   if(media.currentTime <= 3) {
     rwd.classList.remove('active');
@@ -97,7 +102,8 @@ function windForward() {
     media.currentTime += 3;
   }
 }
-
+/*Define time in minutes and seconds, then create variables for those values*/
+/*If the seconds and minutes are less than a value of 10, fix the timer to display properly according to minutes or seconds*/
 function setTime() {
   var minutes = Math.floor(media.currentTime / 60);
   var seconds = Math.floor(media.currentTime - minutes * 60);

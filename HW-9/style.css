@@ -7,18 +7,54 @@
     font-weight: normal;
     font-style: normal;
 }
+/*Importing a font to use for our text*/
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+/*Adding in a background color and image*/
+body {
+  background-color: #1c4c63;
+  background-image: url(./images/mountain.png);
+  background-position: center;
+  background-size: 1500px 1200px;
+  background-repeat: no-repeat;
+}
+/*Dressing up the links*/
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: blue;
+}
 
 video {
   border: 1px solid black;
+  margin: 0 auto;
+  display: inline-block;
 }
-
-p {
-  position: absolute;
-  top: 310px;
+/*Formatting header element*/
+h3 {
+  text-align: center;
+  margin-top: 100px;
+  color: #ffffff;
+  text-shadow: 3px 3px #000000;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Black Han Sans', sans-serif;
+}
+/*Formatting lesson credits*/
+#lesson {
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Black Han Sans', sans-serif;
 }
 
 .player {
   position: absolute;
+  margin-left: 620px
 }
 
 .controls {

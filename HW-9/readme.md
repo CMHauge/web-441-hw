@@ -16,3 +16,5 @@ It's been a long night. We're going on 4am now, but I'm determined to finish thi
 I wasn't a fan of the fact that the tutorial used a copyrighted video, so I pulled a video from a free stock video website, that way we weren't infringing on any copyright issues. I'm also planning on adding some extra elements to the CSS to format my webpage a little better and add some of my own flair to it. Here's hoping everything goes well.
 
 ### Wrap Up and Conclusions
+
+I'm still honestly a little unsure if what I did was correct for this homework assignment, but it was a part of the lessons we were given and our instructions said to use material from the lessons we were given, so I ran with that the best we could. Honestly it felt a little vague and confusing, so I hope I'm on the right track. Apologies if I'm not, I had some definite struggles along the way, but I figure something is better than nothing!

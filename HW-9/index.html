@@ -4,18 +4,20 @@
   	<meta charset="utf-8">
     <meta name="author" content="Chelsey Hauge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<title>Video player example</title>
+  	<title>Video API Project</title>
   	<link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="player">
+    <h3>Adventure Trip, courtesy of Pexels Videos | <a href="https://videos.pexels.com/videos/adventure-trip-852359">Pexels.com</a>.</h3>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs" id="lesson">Lesson coutesy of Mozilla</a>
+    <div align="center" class="player">
       <video controls>
         <source src="video/hw9-video.mp4" type="video/mp4">
-        <source src="video/hw9-video.webm" type="video/webm">
+        <source src="video/hw9-video.we" type="video/webm">
         <!-- fallback content here -->
       </video>
       <!--Creating buttons for player-->
-      <div class="controls">
+      <div align="center" class="controls">
         <button class="play" data-icon="P" aria-label="play pause toggle"></button>
         <button class="stop" data-icon="S" aria-label="stop"></button>
         <div class="timer"><div></div><span aria-label="timer">00:00</span></div>
@@ -23,7 +25,6 @@
         <button class="fwd" data-icon="F" aria-label="fast forward"></button>
       </div>
     </div>
-    <p>Adventure Trip, video courtesy of Pexels Videos | <a href="https://videos.pexels.com/videos/adventure-trip-852359">Pexels.com</a>.</p>
     <script src="custom-player.js"></script>
   </body>
 </html>
