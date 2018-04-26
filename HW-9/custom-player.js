@@ -89,6 +89,8 @@ function mediaForward() {
 /*Checks to see if the video's current time is under 3 seconds, this is so we can remove the rewind functionality to avoid breaking the player*/
 function windbackward() {
   if(media.currentTime <= 3) {
+    rwd.classList.remove('active');
+    clearInterval(intervalRwd);
     stopMedia();
   } else {
     media.currentTime -= 3;
