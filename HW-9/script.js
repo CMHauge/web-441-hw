@@ -1,5 +1,6 @@
 
 function getData() {
+  var input = $("#search").val()
 
 var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=cats&api_key=qzFa3LBDXVowiyUS0FVqpxffjOJODCpa&limit=10");
 xhr.done(function(response) {
